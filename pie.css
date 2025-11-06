@@ -1,0 +1,146 @@
+
+body {
+    background-color:#FFFFFF;
+    font-family: Georgia, Garamond, serif;
+    color: #404040;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0 20px;
+    background-image: url('back.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+}
+    .container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    color: #333;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    
+}
+
+
+h1, h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 20px 0;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+
+
+h1 {
+    color: #A4A400;
+    background-color: #F0F0F0; 
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    letter-spacing: 0.25em;
+    display: inline-block;
+}
+
+h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-size: 18pt;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: underline;
+    padding: 8px;
+    letter-spacing: 0.25em;
+    display: inline-block;
+}
+
+a {
+    color: #A4A400;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.ingredients li span {
+    text-decoration: underline;
+    cursor: help;
+}
+
+.ingredients li span[title] {
+    position: relative;
+}
+
+.ingredients li span[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    top: -1.5em;
+    background-color: #FFFFA8;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 10pt;
+}
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.tooltip::after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 125%;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(5px);
+    transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap;
+}
+
+
+blockquote {
+    background-color: #FFFFA8;
+    padding: 10px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+blockquote footer {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer pre {
+    font-family: monospace;
+    font-size: 10pt;
+    margin-top: 20px;
+}
+
+
+
+
+
